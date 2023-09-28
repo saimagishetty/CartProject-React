@@ -35,6 +35,7 @@ class App extends React.Component {
       ]
     }
   }
+  // handeldeleteQuantity
   handeldeleteQuantity = (id) => {
     const { products } = this.state
     const items = products.filter((item) => item.id !== id)
@@ -42,6 +43,8 @@ class App extends React.Component {
       products: items
     })
   }
+  // handelDecreaseQuantity
+
   handelDecreaseQuantity = (product) => {
     const { products } = this.state
     const index = products.indexOf(product);
