@@ -56,6 +56,7 @@ class App extends React.Component {
       products: products
     })
   }
+  // handelIncreaseQuantity
   handelIncreaseQuantity = (product) => {
     const { products } = this.state
     const index = products.indexOf(product);
@@ -64,6 +65,7 @@ class App extends React.Component {
       products: products
     })
   }
+  // total_Count
   total_Count = () => {
     const { products } = this.state
     let totalCount = 0;
@@ -73,6 +75,7 @@ class App extends React.Component {
     console.log(totalCount)
     return totalCount
   }
+  // cartTotal
   cartTotal = () => {
     const { products } = this.state
     let cart_total = 0
